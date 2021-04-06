@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/04/03/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>hexo和next搭建个人博客详细教程</title>
     <url>/2021/04/04/hexo%E5%92%8Cnext%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="hexo-系列安装与介绍"><a href="#hexo-系列安装与介绍" class="headerlink" title="hexo 系列安装与介绍"></a>hexo 系列安装与介绍</h1><h2 id="hexo-介绍"><a href="#hexo-介绍" class="headerlink" title="hexo 介绍"></a>hexo 介绍</h2><p>hexo是一个简单地、轻量地、基于Node的静态博客框架,支持使用<a href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin">markdown语言</a>进行文章编写，hexo将自动把您的文章编写为html的文档以供浏览器访问,是快速的博客框架，可以高速的完成网站的渲染工作，可以为建设站点节省大量时间。因为hexo是静态网页，因此可以在自己的服务器或者其他托管服务平台如GitHub上部署。hexo可以更换主题以更改网站风格,hexo目前已经有相当多的主题可供使用，他们多半为用户制作，本文就是使用了next主题。</p>
@@ -57,6 +39,11 @@
 <h3 id="next-启用"><a href="#next-启用" class="headerlink" title="next 启用"></a>next 启用</h3><p>通过以上步骤我们的主题已经下载成功了,那么我们就来启用一下我们的主题。</p>
 <p>在 Hexo 中有两份主要的配置文件 其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。<br>为了描述方便，在以下说明中，将前者称为 站点配置文件， 后者称为 主题配置文件。 如下图所示 ,在文件根目录下的  _config.yml 是站点配置文件,在<code>/themes/next</code>中的是主题配置文件。</p>
 <p><img src="https://raw.githubusercontent.com/axe-handle/myimgs/master/img/mulu.png"></p>
+<p>然后在站点配置文件下把theme设置成next</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<p>运行下我们的项目就好了</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>IT</category>
