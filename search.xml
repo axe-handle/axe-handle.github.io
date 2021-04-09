@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>hexo和next搭建个人博客详细教程</title>
-    <url>/2021/04/04/hexo%E5%92%8Cnext%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/</url>
+    <url>/axe-handle/2021/04/04/hexo%E5%92%8Cnext%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="hexo-系列安装与介绍"><a href="#hexo-系列安装与介绍" class="headerlink" title="hexo 系列安装与介绍"></a>hexo 系列安装与介绍</h1><h2 id="hexo-介绍"><a href="#hexo-介绍" class="headerlink" title="hexo 介绍"></a>hexo 介绍</h2><p>hexo是一个简单地、轻量地、基于Node的静态博客框架,支持使用<a href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin">markdown语言</a>进行文章编写，hexo将自动把您的文章编写为html的文档以供浏览器访问,是快速的博客框架，可以高速的完成网站的渲染工作，可以为建设站点节省大量时间。因为hexo是静态网页，因此可以在自己的服务器或者其他托管服务平台如GitHub上部署。hexo可以更换主题以更改网站风格,hexo目前已经有相当多的主题可供使用，他们多半为用户制作，本文就是使用了next主题。</p>
 <h2 id="hexo-系列安装"><a href="#hexo-系列安装" class="headerlink" title="hexo 系列安装"></a>hexo 系列安装</h2><h3 id="git-安装"><a href="#git-安装" class="headerlink" title="git 安装"></a>git 安装</h3><p>Git（读音为/gɪt/）是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。Git 是 <a href="https://baike.baidu.com/item/%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%9C%AC%E7%BA%B3%E7%AC%AC%E5%85%8B%E7%89%B9%C2%B7%E6%89%98%E7%93%A6%E5%85%B9/1034429?fromtitle=Linus%20Torvalds&fromid=9336769">Linus Torvalds</a> 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
 <p>对于安装git大家可以去<a href="https://git-scm.com/download">git官网</a>去下载对应自己电脑系统的最新版本进行安装，也是一路next就行。<br>安装好之后在命令行输入以下命令,如出现图中所示的版本号，就证明安装成功了。</p>
