@@ -2,31 +2,31 @@
 <search>
   <entry>
     <title>hexo和next搭建个人博客详细教程</title>
-    <url>/axe-handle/2021/04/04/hexo%E5%92%8Cnext%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/</url>
+    <url>/2021/04/04/hexo%E5%92%8Cnext%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="hexo-系列安装与介绍"><a href="#hexo-系列安装与介绍" class="headerlink" title="hexo 系列安装与介绍"></a>hexo 系列安装与介绍</h1><h2 id="hexo-介绍"><a href="#hexo-介绍" class="headerlink" title="hexo 介绍"></a>hexo 介绍</h2><p>hexo是一个简单地、轻量地、基于Node的静态博客框架,支持使用<a href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin">markdown语言</a>进行文章编写，hexo将自动把您的文章编写为html的文档以供浏览器访问,是快速的博客框架，可以高速的完成网站的渲染工作，可以为建设站点节省大量时间。因为hexo是静态网页，因此可以在自己的服务器或者其他托管服务平台如GitHub上部署。hexo可以更换主题以更改网站风格,hexo目前已经有相当多的主题可供使用，他们多半为用户制作，本文就是使用了next主题。</p>
 <h2 id="hexo-系列安装"><a href="#hexo-系列安装" class="headerlink" title="hexo 系列安装"></a>hexo 系列安装</h2><h3 id="git-安装"><a href="#git-安装" class="headerlink" title="git 安装"></a>git 安装</h3><p>Git（读音为/gɪt/）是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。Git 是 <a href="https://baike.baidu.com/item/%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%9C%AC%E7%BA%B3%E7%AC%AC%E5%85%8B%E7%89%B9%C2%B7%E6%89%98%E7%93%A6%E5%85%B9/1034429?fromtitle=Linus%20Torvalds&fromid=9336769">Linus Torvalds</a> 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
 <p>对于安装git大家可以去<a href="https://git-scm.com/download">git官网</a>去下载对应自己电脑系统的最新版本进行安装，也是一路next就行。<br>安装好之后在命令行输入以下命令,如出现图中所示的版本号，就证明安装成功了。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git version</span><br></pre></td></tr></table></figure>
 <p><img src="http://qr78dv44l.hn-bkt.clouddn.com/img/mhl.png"></p>
 <h3 id="node-js-安装"><a href="#node-js-安装" class="headerlink" title="node.js 安装"></a>node.js 安装</h3><p>由于hexo是基于node.js的框架所以先的安装node.js,至于什么是node.js这里就介绍了，想了解的可以去<a href="https://baike.baidu.com/item/node.js/7567977?fr=aladdin">百度</a>或者<a href="http://nodejs.cn/api/">官方文档</a>了解。话不多说步入正题。</p>
-<p>首先大家去<a href="https://nodejs.org/en/">node.js官网</a>下载安装。<br>可以选择版本下载，推荐下载长期稳定的就行，如有需要再更新。<br><img src="https://raw.githubusercontent.com/axe-handle/myimgs/master/img/knode.png"><br>下载好后一路next就行,最后按住win+r打开运行对话框输入cmd然后回车，在窗口输入</p>
+<p>首先大家去<a href="https://nodejs.org/en/">node.js官网</a>下载安装。<br>可以选择版本下载，推荐下载长期稳定的就行，如有需要再更新。<br><img src="http://qr78dv44l.hn-bkt.clouddn.com/img/knode.png"><br>下载好后一路next就行,最后按住win+r打开运行对话框输入cmd然后回车，在窗口输入</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ node -v</span><br></pre></td></tr></table></figure>
 
-<p>如果出现版本号证明安装成功了<br><img src="https://raw.githubusercontent.com/axe-handle/myimgs/master/img/mingl.png"></p>
+<p>如果出现版本号证明安装成功了<br><img src="http://qr78dv44l.hn-bkt.clouddn.com/img/mingl.png"></p>
 <h3 id="hexo-安装"><a href="#hexo-安装" class="headerlink" title="hexo 安装"></a>hexo 安装</h3><p>安装好node.js后,我们就可以安装hexo框架了。首先打开cmd命令行窗口,进入到你要安装的hexo框架的目录,<br>我就以在D盘blog文件夹为例，如以下命令：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">D: //进入对应盘</span><br><span class="line"><span class="built_in">cd</span> blog //进入到你要安装的hexo框架的目录</span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/axe-handle/myimgs/master/img/panfu.png"></p>
+<p><img src="http://qr78dv44l.hn-bkt.clouddn.com/img/panfu.png"></p>
 <p>进入之后,根据以下命令来安装和建站</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-cli -g  //安装</span><br><span class="line">$ hexo init myblog(目录名)  // 初始化博客,也可以直接在blog目录初始化 $ hexo init</span><br><span class="line">$ <span class="built_in">cd</span> myblog  //进入博客目录</span><br><span class="line">$ npm install //安装依赖</span><br><span class="line">$ hexo server //运行</span><br></pre></td></tr></table></figure>
-<p>就可以看到下面图片所示<br><img src="https://raw.githubusercontent.com/axe-handle/myimgs/master/img/yunx.png"><br>复制<a href="http://localhost:4000/">http://localhost:4000</a>到浏览器打开,就可以看到如下图所示<br><img src="https://raw.githubusercontent.com/axe-handle/myimgs/master/img/jemian.jpg"><br>我们的静态博客就搭建好了。</p>
+<p>就可以看到下面图片所示<br><img src="http://qr78dv44l.hn-bkt.clouddn.com/img/yunx.png"><br>复制<a href="http://localhost:4000/">http://localhost:4000</a>到浏览器打开,就可以看到如下图所示<br><img src="http://qr78dv44l.hn-bkt.clouddn.com/img/jemian.jpg"><br>我们的静态博客就搭建好了。</p>
 <h1 id="next-主题介绍与安装"><a href="#next-主题介绍与安装" class="headerlink" title="next 主题介绍与安装"></a>next 主题介绍与安装</h1><h2 id="next-介绍"><a href="#next-介绍" class="headerlink" title="next 介绍"></a>next 介绍</h2><p>next是一款支持自定义和简约风格个主题。(个人观点)</p>
 <h2 id="next-安装与启用"><a href="#next-安装与启用" class="headerlink" title="next 安装与启用"></a>next 安装与启用</h2><h3 id="next-安装"><a href="#next-安装" class="headerlink" title="next 安装"></a>next 安装</h3><p>Hexo 安装主题的方式非常简单，只需要将主题文件拷贝至站点目录的 themes 目录下， 然后修改下配置文件即可。当然你也可以用Git克隆最新版本之后更新就可以通过git pull 来快速更新，而不用再次下载压缩包替换。在<a href="https://hexo.io/zh-cn/">hexo官方文档</a>中的主题栏中你可以找到很多个性炫酷的主题</p>
-<p><img src="https://raw.githubusercontent.com/axe-handle/myimgs/master/img/themes.png"></p>
+<p><img src="http://qr78dv44l.hn-bkt.clouddn.com/img/themes.png"></p>
 <p>我们选择非常受欢迎的next主题来美化我们的主题。首先去到github克隆我们的<a href="https://github.com/theme-next/hexo-theme-next">next主题</a>到我们的项目.可以通过不同的方式下载</p>
 <h4 id="通过下载源码方式"><a href="#通过下载源码方式" class="headerlink" title="通过下载源码方式"></a>通过下载源码方式</h4><p>首先选择对应版本</p>
-<p><img src="https://raw.githubusercontent.com/axe-handle/myimgs/master/img/nextbb.png"></p>
+<p><img src="http://qr78dv44l.hn-bkt.clouddn.com/img/nextbb.png"></p>
 <p>然后点击仓库右边的Code绿色按钮,点击Download ZIP 进行源码下载</p>
-<p><img src="https://raw.githubusercontent.com/axe-handle/myimgs/master/img/nextbao.png"></p>
+<p><img src="http://qr78dv44l.hn-bkt.clouddn.com/img/nextbao.png"></p>
 <p>下载好以后通过解压工具进行解压，解压过后的文件重命名为next,然后复制到我们项目的<code>\themes </code> 文件夹下，如下图所示</p>
 <p><img src="https://raw.githubusercontent.com/axe-handle/myimgs/master/img/mextwenj.png"></p>
 <h4 id="通过git克隆仓库下载"><a href="#通过git克隆仓库下载" class="headerlink" title="通过git克隆仓库下载"></a>通过git克隆仓库下载</h4><p>通过这种方式下载可能会遇到一些问题,大多是因为网络问题,多试几次或者百度解决就好了。我们可以通过下面命令来下载</p>
@@ -34,11 +34,11 @@
 
 <p>当然你也可以在<a href="http://theme-next.iissnan.com/getting-started.html">next文档</a>中复制命令下载<br>不过文档里的命令克隆下载的是6.0以下版本的next主题,如果你要以上或者最新版本就要通过更新命令来升级版本了。具体哪个方法好，看个人爱好来定夺。</p>
 <p>然后打开博客根目录下的<code>\themes </code> 看看里面是否有next文件夹,有点击<code>\next</code>看看里面的目录结构是否完整</p>
-<p><img src="https://raw.githubusercontent.com/axe-handle/myimgs/master/img/nextjue.png"></p>
+<p><img src="http://qr78dv44l.hn-bkt.clouddn.com/img/nextjieg.png"></p>
 <p>如有上图所示的基本目录结构,证明克隆成功了</p>
 <h3 id="next-启用"><a href="#next-启用" class="headerlink" title="next 启用"></a>next 启用</h3><p>通过以上步骤我们的主题已经下载成功了,那么我们就来启用一下我们的主题。</p>
 <p>在 Hexo 中有两份主要的配置文件 其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。<br>为了描述方便，在以下说明中，将前者称为 站点配置文件， 后者称为 主题配置文件。 如下图所示 ,在文件根目录下的  _config.yml 是站点配置文件,在<code>/themes/next</code>中的是主题配置文件。</p>
-<p><img src="https://raw.githubusercontent.com/axe-handle/myimgs/master/img/mulu.png"></p>
+<p><img src="http://qr78dv44l.hn-bkt.clouddn.com/img/mulu.png"></p>
 <p>然后在站点配置文件下把theme设置成next</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
 
